@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OpenHTMLToPDF Demo</title>
+    <meta name="description" content="OpenHTMLToPDF Demo">
+    <meta name="author" content="kaleguy">
+    <bookmarks class="bookmarks">
+        <bookmark name="Table" href="#myGrid"></bookmark>
+        <bookmark name="HighCharts" href="#container"></bookmark>
+    </bookmarks>
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+<body>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.js"></script>
+<script src="./data.js"></script>
+<div class="report">
+    <h1>Table Demo</h1>
+    <div>
+      <div id="myGrid" style="height: 100%; page-break-after: always"></div>
+    </div>
+    <h1>HighChart Demo</h1>
+    <div id="container" style="page-break-after: always"></div>
+</div>
+<script src="js/scripts.js"></script>
+</body>
+</html>
